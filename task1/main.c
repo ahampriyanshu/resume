@@ -8,10 +8,9 @@
 #include "crypto/bip39.h"
 
 // Do display ongoing porcess
-static void progress_callback(uint32_t pos, uint32_t len)
-{
-	printf("%" PRIu32 "/", pos);
-	printf("%" PRIu32 " ... ", len);
+
+static void progress_callback (uint32_t pos, uint32_t len) {
+    printf("%6.2lf%c complete\n", (100.0 * pos / len), '%');
 }
 
 // Driver Code
