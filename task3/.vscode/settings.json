@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "ecdsa.h": "c",
-        "secp256k1.h": "c",
-        "ripemd160.h": "c"
-    }
-}

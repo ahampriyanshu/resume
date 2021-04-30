@@ -7,9 +7,10 @@
 <details>
 <summary>Output</summary>
 
-![task 1](screenshots/1.png)
+![task 1](screenshots/0.png)
 
 </details>
+
 ## Task 1
 
 * To understand how ``make`` works and then to calculate a ``BIP39 Seed`` using 24 bip mnemonics.
@@ -17,7 +18,7 @@
 <details>
 <summary>Output</summary>
 
-![task 2](screenshots/2.png)
+![task 2](screenshots/1.png)
 
 </details>
 
@@ -28,9 +29,21 @@
 <details>
 <summary>Output</summary>
 
+![task 3](screenshots/2.png)
+
+</details>
+
+## Task 3
+
+* To sign an unsigned ``bitcoin testnet`` transaction
+
+<details>
+<summary>Output</summary>
+
 ![task 3](screenshots/3.png)
 
 </details>
+
 
 ## Resources
 
