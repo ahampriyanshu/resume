@@ -1,42 +1,53 @@
-#include "utils.h"
-#include "RLP.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include <math.h>
-#include <unistd.h>
-#include <inttypes.h>
-#include "crypto/bip39.h"
-#include "crypto/bip32.h"
-#include "keccak.h"
+#include "secp256k1.h"
+#include "RLP.h"
+#include "utils.h"
+#include "sha3.h"
 
-#define VERSION_PUBLIC 0x0488b21e
-#define VERSION_PRIVATE 0x0488ade4
-#define XPUB_MAXLEN 112
-#define BN256_STR_LEN 64
+#define SIGNED_MAX_LEN 3000
 
-// Do display ongoing porcess
-static void progress_callback(uint32_t pos, uint32_t len)
+struct RawTxStruct
 {
-	// printf("%" PRIu32 " / ", pos);
-	// printf("%" PRIu32 " ... \n", len);
+    const char *nonce;
+    const char *gas_price;
+    const char *gas_limit;
+    const char *to;
+    const char *value;
+    const char *data;
+    const char *r;
+    const char *s;
+    uint32_t v;
+};
+
+void print_u8(unsigned char *array, uint8_t length)
+{
+    int i;
+    for (i = 0; i < length; i++)
+    {
+        printf("%02x", array[i]);
+    }
+    printf("\n");
 }
 
-void print_u8(uint8_t *s) {
-    size_t len = strlen((char*)s);
-    for(size_t i = 0; i < len; i++) {
+void print_hex(uint8_t *s)
+{
+    size_t len = strlen((char *)s);
+    for (size_t i = 0; i < len; i++)
+    {
         printf("%02x", s[i]);
     }
     printf("\n");
 }
 
-int wallet_ethereum_assemble_tx(EthereumSignTx *msg, EthereumSig *tx, uint64_t *rawTx) {
+int wallet_ethereum_assemble_tx(EthereumSignTx *msg, EthereumSig *tx, uint64_t *rawTx)
+{
     EncodeEthereumSignTx new_msg;
     EncodeEthereumTxRequest new_tx;
     memset(&new_msg, 0, sizeof(new_msg));
     memset(&new_tx, 0, sizeof(new_tx));
-
     wallet_encode_element(msg->nonce.bytes, msg->nonce.size,
                           new_msg.nonce.bytes, &(new_msg.nonce.size), false);
     wallet_encode_element(msg->gas_price.bytes, msg->gas_price.size,
@@ -50,115 +61,138 @@ int wallet_ethereum_assemble_tx(EthereumSignTx *msg, EthereumSig *tx, uint64_t *
     wallet_encode_element(msg->data_initial_chunk.bytes,
                           msg->data_initial_chunk.size, new_msg.data_initial_chunk.bytes,
                           &(new_msg.data_initial_chunk.size), false);
-
     wallet_encode_int(tx->signature_v, &(new_tx.signature_v));
     wallet_encode_element(tx->signature_r.bytes, tx->signature_r.size,
                           new_tx.signature_r.bytes, &(new_tx.signature_r.size), true);
     wallet_encode_element(tx->signature_s.bytes, tx->signature_s.size,
                           new_tx.signature_s.bytes, &(new_tx.signature_s.size), true);
-
     int length = wallet_encode_list(&new_msg, &new_tx, rawTx);
     return length;
 }
 
-void assembleTx() {
+void fill_txn(struct RawTxStruct rts, char *rlpre)
+{
     static char rawTx[256];
     EthereumSignTx tx;
     EthereumSig signature;
     uint64_t raw_tx_bytes[24];
-    const char *nonce = "00";
-    const char *gas_price = "430e2340";
-    const char *gas_limit = "5208";
-    const char *to = "7f8f2c6ab110acc28ecd9d2ab19166e455455a07";
-    const char *value = "2c68af0bb140000";
-    const char *data = "00";
-    const char *r = "09ebb6ca057a0535d6186462bc0b465b561c94a295bdb0621fc19208ab149a9c";
-    const char *s = "440ffd775ce91a833ab410777204d5341a6f9fa91216a6f3ee2c051fea6a0428";
-    uint32_t v = 27;
+
+    const char *nonce = rts.nonce;
+    const char *gas_price = rts.gas_price;
+    const char *gas_limit = rts.gas_limit;
+    const char *to = rts.to;
+    const char *value = rts.value;
+    const char *data = rts.data;
+    const char *r = rts.r;
+    const char *s = rts.s;
+    uint32_t v = rts.v;
 
     tx.nonce.size = size_of_bytes(strlen(nonce));
     hex2byte_arr(nonce, strlen(nonce), tx.nonce.bytes, tx.nonce.size);
-
     tx.gas_price.size = size_of_bytes(strlen(gas_price));
     hex2byte_arr(gas_price, strlen(gas_price), tx.gas_price.bytes, tx.gas_price.size);
-
     tx.gas_limit.size = size_of_bytes(strlen(gas_limit));
     hex2byte_arr(gas_limit, strlen(gas_limit), tx.gas_limit.bytes, tx.gas_limit.size);
-
     tx.to.size = size_of_bytes(strlen(to));
     hex2byte_arr(to, strlen(to), tx.to.bytes, tx.to.size);
-
     tx.value.size = size_of_bytes(strlen(value));
     hex2byte_arr(value, strlen(value), tx.value.bytes, tx.value.size);
-
     tx.data_initial_chunk.size = size_of_bytes(strlen(data));
     hex2byte_arr(data, strlen(data), tx.data_initial_chunk.bytes,
                  tx.data_initial_chunk.size);
-
-    signature.signature_v = 27;
-
+    signature.signature_v = v;
     signature.signature_r.size = size_of_bytes(strlen(r));
     hex2byte_arr(r, strlen(r), signature.signature_r.bytes, signature.signature_r.size);
-
     signature.signature_s.size = size_of_bytes(strlen(s));
     hex2byte_arr(s, strlen(s), signature.signature_s.bytes, signature.signature_s.size);
-
-    int length = wallet_ethereum_assemble_tx(&tx, &signature, raw_tx_bytes);
-    int8_to_char((uint8_t *) raw_tx_bytes, length, rawTx);
-    printf("raw transaction: %s\n", rawTx);
+    int length;
+    length = wallet_ethereum_assemble_tx(&tx, &signature, raw_tx_bytes);
+    int8_to_char((uint8_t *)raw_tx_bytes, length, rawTx);
+    sprintf(rlpre, "%s", rawTx);
 }
 
-int main() {
-    const char *mnemonic = "machine ring topic ladder damage stem client cage dust feed attack young audit drum distance lava torch iron absurd female place aisle title gauge";
-	const char *passphrase = "";
-	int seedlength = 64;
-	uint8_t seed[seedlength];
-	HDNode node , node1;
-	char private[XPUB_MAXLEN];
-	char public[XPUB_MAXLEN]; 
-    uint8_t address[20];
-    uint32_t fingerprint = 0x00000000;
-	const char curve[] = "secp256k1";
-	mnemonic_to_seed(mnemonic, passphrase, seed, progress_callback);
-	hdnode_from_seed(seed, 64, curve, &node);
-	printf("\n");
-	printf("BIP39 Mnemonic: ");
-	puts(mnemonic);
-	printf("BIP39 Seed: ");
-	for (size_t i = 0; i < seedlength; i++)
-	{
-		printf("%02x", seed[i]);
-	}
-	printf("\n"); 
-	printf("Fingerprint : %08x\n", fingerprint);
-	printf("Master Private Key: ");
-	print_u8(node.private_key);
-	printf("Master Chain Code: ");
-	for (size_t i = 0; i < 31; i++)
-	{
-		printf("%02x", node.chain_code[i]);
-	}
-	printf("\n");
-	printf("Master Public Key: ");
-	hdnode_fill_public_key(&node);
-	print_u8(node.public_key);
-	printf("BIP32 Root Key: ");
-	hdnode_serialize_private(&node, fingerprint, VERSION_PRIVATE, private,sizeof(private));
-	puts(private);
-	hdnode_deserialize_private(private, VERSION_PRIVATE, curve, &node, NULL);
-	printf("Deriviation Path m/44'/60'/0'/0/0 \n");
-	hdnode_private_ckd_prime(&node, 44);
-	hdnode_private_ckd_prime(&node, 60);
-	hdnode_private_ckd_prime(&node, 0);
-	hdnode_private_ckd(&node, 0); 
-	hdnode_private_ckd(&node, 0);
+int main()
+{
+
+    uint8_t buf[32];
+    static secp256k1_context *ctx = NULL;
+    ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
+    unsigned char *privateKeyStr = "e66943565a48c4ef5ab0e69f4e06282ac873d97fb78bf97d9d4b45b210effc9f";
+    unsigned char privateKey[32];
+    hex2byte_arr(privateKeyStr, 64, privateKey, 32);
+
     printf("Private Key: ");
-	print_u8(node.private_key);
-	printf("Public Key: ");
-	hdnode_fill_public_key(&node);
-    print_u8(node.public_key); 
-    printf("Wallet Address: ");
-    hdnode_get_ethereum_pubkeyhash(&node, address);
-    print_u8(address);
+    print_u8(privateKey, 32);
+
+    secp256k1_pubkey publicKey;
+    secp256k1_ec_pubkey_create(ctx, &publicKey, privateKey); // fill public Key
+    unsigned char publicKeyBuf[65];
+    size_t clen = 65;
+    unsigned char publicKeyStr[64]; // after removing front 04
+    secp256k1_ec_pubkey_serialize(ctx, &publicKeyBuf, &clen, &publicKey, SECP256K1_EC_UNCOMPRESSED);
+    strncpy(publicKeyStr, publicKeyBuf + 1, 64);
+
+    printf("Pulic Key: ");
+    print_u8(publicKeyStr, 32);
+
+    sha3_HashBuffer(256, SHA3_FLAGS_KECCAK, &publicKeyStr, 64, buf, sizeof(buf));
+    unsigned char address[20];
+    strncpy(address, buf + 12, 20); // last 20 bytes from the hash
+    printf("Address: ");
+    print_u8(address, 20);
+
+
+    struct RawTxStruct rts;
+    rts.nonce = "02";
+    rts.gas_price = "77359400";
+    rts.gas_limit = "5208";
+    rts.to = "c0095a58489ba23cb5c6808dc0bbbf1cdca32aca";
+    rts.value = "2c68af0bb140000";
+    rts.data = "";
+    rts.r = "0";
+    rts.s = "0";
+    rts.v = 3; // chainID (Ropsten)
+    char unsignedTxn[200];
+    fill_txn(rts, unsignedTxn);
+    unsigned char rlp[100];
+    hex2byte_arr(unsignedTxn, strlen(unsignedTxn), rlp, strlen(unsignedTxn) / 2);
+    printf("\nUnsigned Txn: ");
+    print_u8(rlp, strlen(unsignedTxn) / 2);
+
+    uint8_t msgHashBuf[32];
+    sha3_HashBuffer(256, SHA3_FLAGS_KECCAK, &rlp, strlen(unsignedTxn) / 2, msgHashBuf, sizeof(msgHashBuf));
+    printf("\nMsgHash: ");
+    print_u8(msgHashBuf, 32);
+
+    unsigned char rs[64];
+    secp256k1_ecdsa_signature signature;
+    secp256k1_ecdsa_sign(ctx, &signature, msgHashBuf, privateKey, NULL, NULL);
+    secp256k1_ecdsa_signature_serialize_compact(ctx, rs, &signature);
+
+    unsigned char r[65];
+    unsigned char s[65];
+
+    int index = 0;
+    for (int i = 0; i < 32; i++)
+    {
+        index += sprintf(r + index, "%02x", rs[i]);
+    };
+    printf("r: %s\n", r);
+
+    index = 0;
+    for (int i = 32; i < 64; i++)
+    {
+        index += sprintf(s + index, "%02x", rs[i]);
+    };
+    printf("s: %s\n", s);
+
+    rts.r = r;
+    rts.s = s;
+    rts.v = 28 + rts.v * 2 + 8;
+    
+    char signedTxn[SIGNED_MAX_LEN];
+    fill_txn(rts, signedTxn);
+    printf("\nSigned Txn: 0x%s \n", signedTxn);
+
     return 0;
 }
