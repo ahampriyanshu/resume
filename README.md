@@ -1,59 +1,34 @@
 ## Cyptography
 
-## Task 0
+## Task 1
 
 * To implement ``Shamir Secret Sharing Alogithm`` using C.
 
-<details>
-<summary>Output</summary>
-
 ![task 1](screenshots/0.png)
-
-</details>
-
-## Task 1
-
-* To understand how ``make`` works and then to calculate a ``BIP39 Seed`` using 24 bip mnemonics.
-
-<details>
-<summary>Output</summary>
-
-![task 2](screenshots/1.png)
-
-</details>
 
 ## Task 2
 
-* To derive ``public key``, ``private key``, ``chain node`` and ``reciever and change address`` for ``Bitcoin Testnet`` using 24 bip mnemonics for derivation path ``m/44'/1'/0`/0/``
+* To understand how ``make`` works and then to calculate a ``BIP39 Seed`` using 24 bip mnemonics.
 
-<details>
-<summary>Output</summary>
-
-![task 3](screenshots/2.png)
-
-</details>
+![task 2](screenshots/1.png)
 
 ## Task 3
 
-* To sign an unsigned ``bitcoin testnet`` transaction
+* To derive ``public key``, ``private key``, ``chain node`` and ``reciever and change address`` for ``Bitcoin Testnet`` using 24 bip mnemonics for derivation path ``m/44'/1'/0`/0/``
 
-<details>
-<summary>Output</summary>
-
-![task 3](screenshots/3.png)
-
-</details>
+![task 2](screenshots/2.png)
 
 ## Task 4
 
+* To sign an unsigned ``bitcoin testnet`` transaction
+
+![task 4](screenshots/3.png)
+
+## Task 5
+
 * To sign a raw ``Ethereum (Ropsten)`` transaction
 
-<details>
-<summary>Output</summary>
-
-![task 3](screenshots/4.png)
-
-</details>
+![task 5](screenshots/4.png)
 
 
 ## Resources
