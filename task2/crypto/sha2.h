@@ -102,8 +102,6 @@ void sha256_Init(SHA256_CTX *);
 void sha256_Update(SHA256_CTX*, const uint8_t*, size_t);
 void sha256_Final(SHA256_CTX*, uint8_t[SHA256_DIGEST_LENGTH]);
 char* sha256_End(SHA256_CTX*, char[SHA256_DIGEST_STRING_LENGTH]);
-
-// 5th step Use this func
 void sha256_Raw(const uint8_t*, size_t, uint8_t[SHA256_DIGEST_LENGTH]);
 char* sha256_Data(const uint8_t*, size_t, char[SHA256_DIGEST_STRING_LENGTH]);
 

@@ -4,37 +4,48 @@
 
 * To implement ``Shamir Secret Sharing Alogithm`` using C.
 
-![task 1](screenshots/0.png)
+![task 1](screenshots/1.png)
 
 ## Task 2
 
 * To understand how ``make`` works and then to calculate a ``BIP39 Seed`` using 24 bip mnemonics.
 
-![task 2](screenshots/1.png)
+![task 2](screenshots/2.png)
 
 ## Task 3
 
 * To derive ``public key``, ``private key``, ``chain node`` and ``reciever and change address`` for ``Bitcoin Testnet`` using 24 bip mnemonics for derivation path ``m/44'/1'/0`/0/``
 
-![task 2](screenshots/2.png)
+![task 2](screenshots/3.png)
 
 ## Task 4
 
 * To sign an unsigned ``bitcoin testnet`` transaction
 
-![task 4](screenshots/3.png)
+![task 4](screenshots/4.png)
 
 ## Task 5
 
 * To sign a raw ``Ethereum (Ropsten)`` transaction
 
-![task 5](screenshots/4.png)
+![task 5](screenshots/5.png)
+
+## Task 6
+
+* Create a ``2 of 3 MultiSig Address`` for btc testnet and fund this address through faucet
+
+![task 5](screenshots/6.png)
 
 
 ## Resources
 
 * [https://iancoleman.io/bip39](https://iancoleman.io/bip39)
 * [http://bip32.org](http://bip32.org)
+* [https://coinb.in/](https://coinb.in/)
+* [https://www.blockchain.com/explorer](https://www.blockchain.com/explorer)
+* [https://live.blockcypher.com/](https://live.blockcypher.com/)
+* [https://bitcoinfaucet.uo1.net/](https://bitcoinfaucet.uo1.net)
+* [https://www.myetherwallet.com/](https://www.myetherwallet.com/)
 * [https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 * [https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
 * [https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
@@ -51,3 +62,8 @@
 * [https://hackernoon.com/how-to-generate-ethereum-addresses-technical-address-generation-explanation-25r3zqo](https://hackernoon.com/how-to-generate-ethereum-addresses-technical-address-generation-explanation-25r3zqo)
 * [https://www.cs.utexas.edu/users/moore/acl2/manuals/current/manual/index-seo.php/BITCOIN____BIP32-PATH](https://www.cs.utexas.edu/users/moore/acl2/manuals/current/manual/index-seo.php/BITCOIN____BIP32-PATH)
 * [https://medium.com/coinmonks/mnemonic-generation-bip39-simply-explained-e9ac18db9477](https://medium.com/coinmonks/mnemonic-generation-bip39-simply-explained-e9ac18db9477)
+* [https://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/](https://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/)
+* [http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html](http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html)
+* [https://github.com/prettymuchbryce/hellobitcoin](https://github.com/prettymuchbryce/hellobitcoin)
+* [https://gist.github.com/gavinandresen/3966071](https://gist.github.com/gavinandresen/3966071)
+* [https://medium.com/coinmonks/build-p2sh-address-and-spend-its-fund-in-golang-1a03a4131512](https://medium.com/coinmonks/build-p2sh-address-and-spend-its-fund-in-golang-1a03a4131512)
