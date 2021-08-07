@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+
+  </head>
+  <body>
+ <nav>
+    <div class="nav-wrapper">
+      <a href="{% url 'movies:index' %}" class="brand-logo"><i class="material-icons">&emsp;&emsp;movie</i> Vidly </a>
+    </div>
+  </nav>
+  <br><br>
+    <main class="container">
+    {% block content %}
+    {% endblock  %}
+    </main>
+
+      <!---    Footer   ---->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Built By Priyanshu</h5>
+                    <p class="grey-text text-lighten-4">This is my first Django Site<br>
+                        Uses Materialize CSS <br> Tastypie API framework <br> Sqlite3 database <br> Runs on Gunicorn<br> Hosted on Heroku  </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Project you may like</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">PyDown</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">torrent.it</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">Flowchart to code Converter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">Stack Overflow Clone</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">Some Games</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/PriyanshuMay">Janshakti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Open Sourced on Github
+                <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/priyanshu-tiwari-b85a7a194/">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+  </body>
+</html>
