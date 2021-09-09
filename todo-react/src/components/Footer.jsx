@@ -1,15 +1,12 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
 
-
-function Footer(){
-    
-const year = new Date().getFullYear();
-return (
-    <div className="footer">
-        <p>Copyright &#169; {year}</p>
-    </div>
-)
+function Footer() {
+  const year = new Date().getFullYear();
+  return (
+    <footer>
+      <p>Copyright ⓒ {year}</p>
+    </footer>
+  );
 }
 
 export default Footer;
