@@ -11,13 +11,13 @@
       href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"
     />
     <style>
-        .center{
-            position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-        }
+      .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
     </style>
 
     <!-- UIkit JS -->
@@ -26,26 +26,26 @@
   </head>
   <body class="center">
     <h1 class="uk-text-emphasis uk-text-center">Weather App</h1>
-      <form
-        class="uk-form-stacked uk-animation-toggle"
-        action="/"
-        tabindex="0"
-        method="POST"
+    <form
+      class="uk-form-stacked uk-animation-toggle"
+      action="/"
+      tabindex="0"
+      method="POST"
+    >
+      <input
+        class="uk-input uk-form-width-medium"
+        type="text"
+        placeholder="Enter City"
+        id="cityName"
+        name="cityName"
+      />
+      <button
+        type="submit"
+        name="button"
+        class="uk-animation-shake uk-button uk-button-primary"
       >
-        <input
-          class="uk-input uk-form-width-medium"
-          type="text"
-          placeholder="Enter City"
-          id="cityName"
-          name="cityName"
-        />
-        <button
-          type="submit"
-          name="button"
-          class="uk-animation-shake uk-button uk-button-primary"
-        >
-          Submit
-        </button>
-      </form>
+        Submit
+      </button>
+    </form>
   </body>
 </html>

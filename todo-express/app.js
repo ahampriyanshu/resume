@@ -1,35 +1,35 @@
 const { render } = require("ejs"),
-express = require("express"),
-date = require(__dirname + '/date.js'),
-app = express(),
-listItems = [],
-workItems = [];
+  express = require("express"),
+  date = require(__dirname + "/date.js"),
+  app = express(),
+  listItems = [],
+  workItems = [];
 
-app.set('view engine', 'ejs');
-app.use(express.urlencoded({extended: true}));
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", (req, res) =>  {
-
+app.get("/", (req, res) => {
   const day = date.getDate();
 
   res.render("list", {
     listTitle: day,
-    listItems: listItems
+    listItems: listItems,
   });
 });
 
 app.get("/work", (req, res) => {
   res.render("list", {
     listTitle: "Work List",
-    listItems: workItems});
+    listItems: workItems,
+  });
 });
 
 app.post("/", (req, res) => {
-  if(req.body.listSubmit === "Work"){
+  if (req.body.listSubmit === "Work") {
     workItems.push(req.body.newTodo);
     res.redirect("/work");
-  }else{
+  } else {
     listItems.push(req.body.newTodo);
     res.redirect("/");
   }
