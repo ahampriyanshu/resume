@@ -1,5 +1,5 @@
-title: 'Priyanshu Tiwari'
-name: 'Priyanshu Tiwari'
+title: 'Links'
+name: 'Links'
 author: 'Priyanshu Tiwari'
 logo: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/logo.png'
 favicon: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/favicon.ico'
@@ -10,7 +10,6 @@ lang: en
 timezone: Asia/Kolkata 
 theme: jekyll-theme-slate
 rss-description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
-
 plugins:
   - jekyll-sitemap  
   - jekyll-seo-tag
