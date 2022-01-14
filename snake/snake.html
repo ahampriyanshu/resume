@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Snake Game</title>
+  <style>
+
+body {
+background:transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+
+canvas {
+background: black;
+    }
+
+#scoreboard{
+  background:transparent;
+  border: none;
+}
+
+</style>
+</head>
+<body">
+<canvas width="400" height="400"   id="game" ></canvas>
+<canvas width="100" height="100" id="scoreboard" ></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+var scorecanvas = document.getElementById('scoreboard');
+var scorecontext = scorecanvas.getContext('2d');
+var grid = 16;
+var count = 0;
+var myScore=0; 
+var snake = {
+  x: 160,       // snake's x co-ordinate
+  y: 160,       // snake's y co-ordinate
+  dx: grid,     // snake's horizontal velocity
+  dy: 0,        // snake's vertical velocity
+  cells: [],    // Body of snake
+  maxCells: 4
+};
+var apple = {
+  x: 320,       //apple's x co-ordinate
+  y: 320        //apple's y co-ordinate
+};
+// Get random numbers
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+// Game loop
+function loop() {
+  requestAnimationFrame(loop);
+  if (++count < 6) {
+    return;
+  }
+  count = 0;  
+  context.clearRect(0,0,canvas.width,canvas.height);
+  scorecontext.clearRect(0,0,canvas.width,canvas.height);
+  snake.x += snake.dx;     //move snake by it's velocity 
+  snake.y += snake.dy;
+
+  if (snake.x < 0) {       //if snkae goes out of frame from left side
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {     //if snkae goes out of frame from right side
+    snake.x = 0;     
+  }
+  if (snake.y < 0) {         //if snkae goes out of frame from the top
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {     //if snkae goes out of frame from the bottom
+    snake.y = 0; 
+  }
+// to update the body of the snake from the beginning using unshift
+  snake.cells.unshift({x: snake.x, y: snake.y});
+// to update the body of the snake from the end using pop funtion 
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();            
+  }
+   // Draw apple and using linear gradient throughout the canvas to give different colors. 
+ 
+  context.fillStyle = 'red';
+  context.beginPath();
+  context.arc(apple.x,apple.y,grid-5,0,Math.PI*2);
+  context.fill();
+  context.closePath();
+
+ 
+  scorecontext.font = '60px bold';
+  scorecontext.fillStyle = "black";
+  scorecontext.fillText(myScore,35,70);
+
+  //Draw snake
+
+  context.fillStyle = 'green';
+  snake.cells.forEach(function(cell, index)
+   {
+    context.fillRect(cell.x, cell.y, grid, grid);  
+
+    // Snake consuming the apple
+    if (cell.x === apple.x && cell.y === apple.y || cell.x === apple.x-grid && cell.y === apple.y
+     || cell.x === apple.x && cell.y === apple.y-grid) {
+      snake.maxCells++;                                   //increases the lenght of the Snake
+      myScore++;                                         //increases the score
+      // Canvas is 400x400 which is 25x25 grids 
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+    for (var i = index + 1; i < snake.cells.length; i++)//bubble sort algorithm
+     {      
+      // Snake occupies same space as a body part = reset game
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        myScore=0;     // Display gameover
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+
+// Take input from keyboard
+document.addEventListener('keydown', function(e) {
+   // left arrow key and a
+  if (e.which === 37 || e.which === 65) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  // up arrow key and w
+  else if (e.which === 38 || e.which === 87 ) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  // right arrow key and d
+  else if (e.which === 39 || e.which === 68 ) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  // down arrow key and s
+  else if (e.which === 40 || e.which === 83 ) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+// start the game
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

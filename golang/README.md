@@ -1,6 +1,6 @@
 # Golang Crash Course
 
-## Installation in Ubuntu(debian)
+## Installation
 
 * curl or wget the tar.gz file\ 
 ``curl -O https://storage.googleapis.com/golang/go1.12.9.linux-amd64.tar.gz``
@@ -27,7 +27,7 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 * To verify installation is successfull run\
 ``go version``
 
-## Update existing version
+## Updating existing version
 
 * To update to the latest vesion of golang, use this beautiful script by [@udhos](https://github.com/udhos)
 ```bash
@@ -36,7 +36,7 @@ cd update-golang
 sudo ./update-golang.sh
 ```
 
-## Every Go project should follow a defined structure
+## Project structure
 
 * Run the following commands(replace ``ahampriyanshu`` with whatever you like)
 ```bash

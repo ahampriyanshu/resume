@@ -5,7 +5,7 @@ const express = require("express"),
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "./public/index.html");
 });
 
 app.post("/", (req, res) => {
@@ -20,13 +20,13 @@ app.post("/", (req, res) => {
       "&units=" +
       unit;
 
-  https.get(url, (response) => {
+  https.get(url, response => {
     if (parseInt(response.statusCode) !== 200) {
       res.send(`<h1 style=" text-align: center; position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
       font-family: Lucida Console; color:red">${query} isn't a city</h1>`);
       return;
     }
-    response.on("data", (data) => {
+    response.on("data", data => {
       const weatherData = JSON.parse(data),
         temp = weatherData.main.temp,
         desc = weatherData.weather[0].description,
