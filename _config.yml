@@ -1,6 +1,13 @@
+url: https://links.ahampriyanshu.com
+lang: en
+timezone: Asia/Kolkata
+title: 'Links | Priyanshu Tiwari'
+author: 'Priyanshu Tiwari'  
+tagline: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
+description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
 theme: jekyll-theme-slate
 show_downloads: true
-rss-description: me learning something
+rss-description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
 
 plugins:
   - jekyll-sitemap  
