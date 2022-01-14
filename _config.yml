@@ -1,14 +1,17 @@
-url: https://links.ahampriyanshu.com
-lang: en
-timezone: Asia/Kolkata
-title: 'Links | Priyanshu Tiwari'
-author: 'Priyanshu Tiwari'  
+title: 'Priyanshu Tiwari'
+name: 'Priyanshu Tiwari'
+author: 'Priyanshu Tiwari'
+logo: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/logo.png'
+favicon: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/favicon.ico'
 tagline: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
 description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
+url: https://links.ahampriyanshu.com
+lang: en
+timezone: Asia/Kolkata 
 theme: jekyll-theme-slate
-show_downloads: true
 rss-description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
 
 plugins:
   - jekyll-sitemap  
   - jekyll-seo-tag
+  - jekyll-feed
