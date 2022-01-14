@@ -1,15 +1,15 @@
 title: 'Links'
 name: 'Links'
 author: 'Priyanshu Tiwari'
-logo: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/logo.png'
-favicon: 'https://github.com/ahampriyanshu/blog/raw/main/assets/images/favicon.ico'
-tagline: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
-description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
+logo: 'https://raw.githubusercontent.com/ahampriyanshu/blog/main/assets/images/logo.png'
+favicon: 'https://raw.githubusercontent.com/ahampriyanshu/blog/main/assets/images/favicon.ico'
+tagline: 'Grouping all my projects, courses, articles in one place'
+description: 'Grouping all my projects, courses, articles in one place'
 url: https://links.ahampriyanshu.com
 lang: en
 timezone: Asia/Kolkata 
-theme: jekyll-theme-slate
-rss-description: 'Simple static site to group all my projects, courses, articles, etc. in one place.'
+theme: jekyll-theme-hacker
+rss-description: 'Grouping all my projects, courses, articles in one place'
 plugins:
   - jekyll-sitemap  
   - jekyll-seo-tag
