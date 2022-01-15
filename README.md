@@ -1,23 +1,4 @@
-## Contact
-
-* [Portfolio](https://ahampriyanshu.com/)
-* [Resume](https://drive.google.com/file/d/1_GZ56-O3JNF6-jmU4Xu-StJYgNdz3Tsa/view?usp=sharing)
-* [ahampriyanshu@gmail.com](mailto:ahampriyanshu@gmail.com?subject=hello)
-* [Telegram](https://t.me/ahampriyanshu)
-* [Discord](https://discordapp.com/users/746095596175097916)
-* [GitHub](https://github.com/ahampriyanshu)
-* [LinkedIn](https://www.linkedin.com/in/ahampriyanshu/)
-* [Instagram](https://www.instagram.com/ahampriyanshu/)
-
-## Blog/Articles
-
-* [Blog](https://blog.ahampriyanshu.com/)
-* [Hail CPP](https://cpp.ahampriyanshu.com/)
-* [Experiments with competitive programming](https://cp.ahampriyanshu.com/)
-* [Geeks For Geeks](https://auth.geeksforgeeks.org/user/ahampriyanshu/articles)
-* [Algo DS 101](https://github.com/ahampriyanshu/algo-ds-101)
-* [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)
-* [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
+# Priyanshu Tiwari
 
 ## Projects
 
@@ -45,8 +26,9 @@
 | Title | Tech Stack  | Instructor |
 | --- | --- | --- |
 | [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) |
-| [Todo App](tutorials/chatapp-socket/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
-| [Todo App](tutorials/chatapp-socket/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Todo React](tutorials/chatapp-socket/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Todo Express](tutorials/chatapp-socket/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Todo Eth](tutorials/chatapp-socket/) | Solidity, Truffle, Eth | [DappUniversity](https://www.dappUniversity.com) |
 | [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) |
 | [Weather App](tutorials/weatherapp-express/) |  Express, Axios | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
 
@@ -77,3 +59,24 @@
 ## Gists
 
 * [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3)
+
+## Blog/Articles
+
+* [Blog](https://blog.ahampriyanshu.com/)
+* [Hail CPP](https://cpp.ahampriyanshu.com/)
+* [Experiments with competitive programming](https://cp.ahampriyanshu.com/)
+* [Geeks For Geeks](https://auth.geeksforgeeks.org/user/ahampriyanshu/articles)
+* [Algo DS 101](https://github.com/ahampriyanshu/algo-ds-101)
+* [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)
+* [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
+
+## Contact
+
+* [Portfolio](https://ahampriyanshu.com/)
+* [Resume](https://drive.google.com/file/d/1_GZ56-O3JNF6-jmU4Xu-StJYgNdz3Tsa/view?usp=sharing)
+* [ahampriyanshu@gmail.com](mailto:ahampriyanshu@gmail.com?subject=hello)
+* [Telegram](https://t.me/ahampriyanshu)
+* [Discord](https://discordapp.com/users/746095596175097916)
+* [GitHub](https://github.com/ahampriyanshu)
+* [LinkedIn](https://www.linkedin.com/in/ahampriyanshu/)
+* [Instagram](https://www.instagram.com/ahampriyanshu/)
