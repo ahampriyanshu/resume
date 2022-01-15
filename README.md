@@ -11,11 +11,9 @@
 | [Gokemon](https://github.com/ahampriyanshu/gokemon) | Golang, Tailwind |
 | [Gonewz](https://github.com/ahampriyanshu/gonewz) | Golang, NewsAPI |
 | [Norm has an api](https://github.com/ahampriyanshu/norm_has_an_api) | Express, Lodash |
-| [Pytube GUI](https://github.com/ahampriyanshu/pytube-gui) | Python, Tkinter |
 | [Track Covid](https://github.com/ahampriyanshu/track-covid) | React, Material UI |
 | [Aanav](https://github.com/ahampriyanshu/aanav) | PHP, Mysql, FPDF |
 | [Vaachaal](https://github.com/ahampriyanshu/vaachaal) | PHP, Mysql, CKEditor |
-| [Install Script](projects/piano-tiles/) | Bash |
 | [Piano Tiles](projects/piano-tiles/) | Vanilla JS |
 | [Ping Pong](projects/ping-pong/) | Vanilla JS |
 | [Snake](projects/snake/) | Vanilla JS |
@@ -45,7 +43,8 @@
 | [Programming In C](courses/c-swayam/) | Anupam Basu , IIT Kharagpur |
 | [Programming In C++](courses/c++-swayam/) | Partha Pratim Das , IIT Kharagpur |
 | [Programming In Java](courses/java-swayam/) | Debasis Samanta , IIT Kharagpur |
-| [Advanced C++](courses/java-swayam/) | Kannan Moudgalya , IIT Bombay |
+| [Advanced C++](courses/c++-adv/) | Kannan Moudgalya , IIT Bombay |
+| [German I](courses/german-swayam/) | Milind Brahme , IIT Madras |
 
 ## Hackathons
 
@@ -59,6 +58,11 @@
 ## Gists
 
 * [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3)
+* [Shamir Secret Algo in C](https://gist.github.com/ahampriyanshu/6a99c4485a1d04d66f3ac621849eb432)
+* [Bash script to commit changes in a MERN app](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3)
+* [Pytube GUI wrapper](https://github.com/ahampriyanshu/pytube-gui) 
+* [Spotdl GUI wrapper](https://github.com/ahampriyanshu/pytube-gui) 
+
 
 ## Blog/Articles
 
