@@ -8,6 +8,6 @@ npm i && npm run dev
 
 ## Preview
 
-![](preview.gif)
+![](https://github.com/ahampriyanshu/meta/raw/main/chat-socket.gif)
 
 - Socket.io tutorial by [Brad Traversy](https://www.traversymedia.com/)
