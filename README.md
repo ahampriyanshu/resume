@@ -66,9 +66,8 @@
 
 ## Blog/Articles
 
-* [Blog](https://blog.ahampriyanshu.com/)
-* [Hail CPP](https://cpp.ahampriyanshu.com/)
-* [Experiments with competitive programming](https://cp.ahampriyanshu.com/)
+* [Blog](https://ahampriyanshu.com/blog)
+* [Experiments with competitive programming](https://ahampriyanshu.com/cp)
 * [Geeks For Geeks](https://auth.geeksforgeeks.org/user/ahampriyanshu/articles)
 * [Algo DS 101](https://github.com/ahampriyanshu/algo-ds-101)
 * [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)

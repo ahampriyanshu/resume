@@ -6,7 +6,7 @@ description: 'Grouping all my projects, courses, articles in one place'
 url: https://links.ahampriyanshu.com
 lang: en
 timezone: Asia/Kolkata 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
 rss-description: 'Grouping all my projects, courses, articles in one place'
 plugins:
   - jekyll-sitemap  
