@@ -62,6 +62,7 @@
 * [Pytube GUI](https://gist.github.com/ahampriyanshu/67269f5feee8dd30b030d60264ccc213) 
 * [Spotdl GUI](https://gist.github.com/ahampriyanshu/3beaac83e60f319adaf22e3095f284e1) 
 * [Bash Install](https://gist.github.com/ahampriyanshu/e54fcf3511704272635b7ddc1e796228) 
+* [Crypto](intern/crypto) 
 
 
 ## Blog/Articles

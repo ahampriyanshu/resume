@@ -14,6 +14,6 @@ npm run dev
 
 ## Preview
 
-![](https://github.com/ahampriyanshu/meta/raw/main/tutorials/todo-sol.gif)
+![](https://github.com/ahampriyanshu/meta/raw/main/tutorials/todo-sol.gif?raw=true)
 
-- Todo solidity by [Dappuniversity](https://www.dappuniversity.com/)
+- Todo solidity tutorial by [Dappuniversity](https://www.dappuniversity.com/)
