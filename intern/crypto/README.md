@@ -82,7 +82,6 @@
 * [https://www.mobilefish.com/services/cryptocurrency/cryptocurrency.html](https://www.mobilefish.com/services/cryptocurrency/cryptocurrency.html)
 * [https://ethereum.stackexchange.com/questions/3386/create-and-sign-offline-raw-transactions/3392](https://ethereum.stackexchange.com/questions/3386/create-and-sign-offline-raw-transactions/3392)
 * [https://hackernoon.com/how-to-generate-ethereum-addresses-technical-address-generation-explanation-25r3zqo](https://hackernoon.com/how-to-generate-ethereum-addresses-technical-address-generation-explanation-25r3zqo)
-* [https://www.cs.utexas.edu/users/moore/acl2/manuals/current/manual/index-seo.php/BITCOIN____BIP32-PATH](https://www.cs.utexas.edu/users/moore/acl2/manuals/current/manual/index-seo.php/BITCOIN____BIP32-PATH)
 * [https://medium.com/coinmonks/mnemonic-generation-bip39-simply-explained-e9ac18db9477](https://medium.com/coinmonks/mnemonic-generation-bip39-simply-explained-e9ac18db9477)
 * [https://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/](https://www.soroushjp.com/2014/12/20/bitcoin-multisig-the-hard-way-understanding-raw-multisignature-bitcoin-transactions/)
 * [http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html](http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html)

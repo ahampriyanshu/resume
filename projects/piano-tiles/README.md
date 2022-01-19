@@ -2,4 +2,4 @@
 
 ## Preview
 
-![](https://github.com/ahampriyanshu/meta/raw/main/projects/piano-tiles.gif?raw=true)
+![](https://github.com/ahampriyanshu/meta/raw/tutorials/project/piano-tiles.gif?raw=true)

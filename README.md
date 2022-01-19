@@ -22,9 +22,10 @@
 | [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) |
 | [Todo React](tutorials/todo-react/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
 | [Todo Express](tutorials/todo-express/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
-| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache, web3, mocha | [DappUniversity](https://www.dappUniversity.com) |
+| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache | [DappUniversity](https://www.dappUniversity.com) |
 | [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) |
 | [Weather App](tutorials/weatherapp-express/) |  Express, Axios, Weather API | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Whatsapp Clone](tutorials/weatherapp-express/) | Next.js, Firebase | [Sonny Sangha](https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA) |
 
 ## Courses
 
