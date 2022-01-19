@@ -14,10 +14,6 @@
 | [Track Covid](https://github.com/ahampriyanshu/track-covid) | React |
 | [Aanav](https://github.com/ahampriyanshu/aanav) | PHP, Mysql |
 | [Vaachaal](https://github.com/ahampriyanshu/vaachaal) | PHP, Mysql |
-| [Piano Tiles](projects/piano-tiles/) | Vanilla JS |
-| [Ping Pong](projects/ping-pong/) | Vanilla JS |
-| [Snake](projects/snake/) | Vanilla JS |
-| [Shooter](projects/shooter/) | Vanilla JS |
 
 ## Tutorials
 
@@ -55,15 +51,19 @@
 | [AMU Robohack](hackathons/##robohack/) | April, 2020 | AMU |
 | [Hack AMU 2](hackathons/##hackamu/) | May, 2020 | AMU |
 
-## Gists/Scripts
+## Programs/Scripts
 
-* [Gists](https://gist.github.com/ahampriyanshu)
-* [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3)
-* [Pytube GUI](https://gist.github.com/ahampriyanshu/67269f5feee8dd30b030d60264ccc213) 
-* [Spotdl GUI](https://gist.github.com/ahampriyanshu/3beaac83e60f319adaf22e3095f284e1) 
-* [Bash Install](https://gist.github.com/ahampriyanshu/e54fcf3511704272635b7ddc1e796228) 
-* [Crypto](intern/crypto) 
-
+| Title |Type |
+| --- | --- |
+| [Pytube GUI](https://gist.github.com/ahampriyanshu/67269f5feee8dd30b030d60264ccc213) | Python |
+| [Spotdl GUI](https://gist.github.com/ahampriyanshu/3beaac83e60f319adaf22e3095f284e1)  | Python |
+| [Bash Install](https://gist.github.com/ahampriyanshu/e54fcf3511704272635b7ddc1e796228) | Bash |
+| [Crypto](intern/crypto) | Trezor-Firmware C |
+| [Piano Tiles](projects/piano-tiles/) | Vanilla JS |
+| [Ping Pong](projects/ping-pong/) | Vanilla JS |
+| [Snake](projects/snake/) | Vanilla JS |
+| [Shooter](projects/shooter/) | Vanilla JS |
+| [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3) | Conf File |
 
 ## Blog/Articles
 
@@ -73,6 +73,7 @@
 * [Algo DS 101](https://github.com/ahampriyanshu/algo-ds-101)
 * [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)
 * [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
+* [Gists](https://gist.github.com/ahampriyanshu)
 
 ## Contact
 

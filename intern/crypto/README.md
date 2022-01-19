@@ -4,12 +4,10 @@
 ### Task 1 : To implement ``Shamir Secret Sharing Alogithm`` using C.
 
 ![task 1](https://github.com/ahampriyanshu/meta/blob/main/intern/1.png?raw=true)
-[Source Code]()
 
 ### Task 2 : To understand how ``make`` works and then to calculate a ``BIP39 Seed`` using 24 bip mnemonics.
 
 ![task 2](https://github.com/ahampriyanshu/meta/blob/main/intern/2.png?raw=true)
-[Source Code]()
 
 ### Task 3 : To derive ``public key``, ``private key``, ``chain node`` and ``reciever and change address`` for ``Bitcoin Testnet`` for derivation path ``m/44'/1'/0`/0/``
 
@@ -24,7 +22,6 @@
   - 00000000 (recieve address node)
 
 ![task 3](https://github.com/ahampriyanshu/meta/blob/main/intern/3.png?raw=true)
-[Source Code]()
 
 ### Task 4 : To sign an unsigned ``bitcoin testnet`` transaction
 * Generate unsigned trans using extendended public key of account node
@@ -40,7 +37,6 @@
 0200000001f5db32c555ba1cb8bc58dfa364e4d476f3f138b5fa854f212273d484be3d5e13010000006a473044022052ce33ff38e1cd81b64fa122bf7f6910823218a808ec99e2fb9591eebbfd3fba02200508750d0325f08dc9d00293e93afae6f0f33a8420259ef417a4746986470046012103279fc9ed6eb0a7ea81747c4259431d4d1ee35ef8f0cbc7eaa9acd18144550c85ffffffff0210270000000000001976a914f03b86b4eb2cacfe0718e28bcb9f00aed168bf4a88ac077a1600000000001976a91418b9420d3e7f85d50d150156bc33c1bbe45c748c88ac00000000
 
 ![task 4](https://github.com/ahampriyanshu/meta/blob/main/intern/4.png?raw=true)
-[Source Code]()
 
 ### Task 5 : To sign a raw ``Ethereum (Ropsten)`` transaction 
 * Search for how ethereum address is generated from public key
@@ -61,7 +57,6 @@
 { "nonce": "0x02", "gasLimit": "0x5208", "gasPrice": "0x77359400", "to": "0xc0095a58489ba23cb5c6808dc0bbbf1cdca32aca", "value": "2c68af0bb140000", "data": "0x", "chainId": 3 }
 
 ![task 5](https://github.com/ahampriyanshu/meta/blob/main/intern/5.png?raw=true)
-[Source Code]()
 
 * Copy and paste the **crypto** library before executing the Makefile.
 

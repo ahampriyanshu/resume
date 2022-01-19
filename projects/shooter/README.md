@@ -2,4 +2,4 @@
 
 ## Preview
 
-![](preview.gif)
+![](https://github.com/ahampriyanshu/meta/raw/main/projects/shooter.gif?raw=true)
