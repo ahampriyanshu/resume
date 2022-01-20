@@ -60,10 +60,10 @@
 | [Spotdl GUI](https://gist.github.com/ahampriyanshu/3beaac83e60f319adaf22e3095f284e1)  | Python |
 | [Bash Install](https://gist.github.com/ahampriyanshu/e54fcf3511704272635b7ddc1e796228) | Bash |
 | [Crypto](intern/crypto) | Trezor-Firmware C |
-| [Piano Tiles](projects/piano-tiles/) | Vanilla JS |
-| [Ping Pong](projects/ping-pong/) | Vanilla JS |
-| [Snake](projects/snake/) | Vanilla JS |
-| [Shooter](projects/shooter/) | Vanilla JS |
+| [Piano Tiles](scripts/piano-tiles/) | Vanilla JS |
+| [Ping Pong](scripts/ping-pong/) | Vanilla JS |
+| [Snake](scripts/snake/) | Vanilla JS |
+| [Shooter](scripts/shooter/) | Vanilla JS |
 | [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3) | Conf File |
 
 ## Blog/Articles
