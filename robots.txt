@@ -1,0 +1,2 @@
+Sitemap: https://links.ahampriyanshu.com/sitemap.xml
+User-agent: *

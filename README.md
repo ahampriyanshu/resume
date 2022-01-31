@@ -2,18 +2,30 @@
 
 ## Projects
 
-| Title | Tech Stack |
-| --- | --- |
+### i-GNEz (April 2021)
+
+- [Visit](https://i-gnez.github.io/) | [Code](https://github.com/i-GNEz/i-GNEz.github.io)
+- Pug, Express, Mongo, Sheets API
+![](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+
+### Ojas (Jan 2021)
+
+- [Visit](https://ahampriyanshu.pythonanywhere.com/) | [Code](https://github.com/ahampriyanshu/ojas-django)
+- Django, SQlite
+![](https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true)
+
+
+
+<!-- | [Bulky](https://github.com/ahampriyanshu/bulky) | PDFlib, filesaver |
 | [Ojas-Blog](https://github.com/ahampriyanshu/ojas-django) | Django, SQlite  |
 | [i-GNEz](https://github.com/i-GNEz/i-GNEz.github.io) | Pug, Express, Mongo |
-| [Bulky](https://github.com/ahampriyanshu/bulky) | PDFlib, filesaver |
 | [Docugo](http://docugo.vercel.app/) | docxtemplater, pizzip |
 | [Gokemon](https://github.com/ahampriyanshu/gokemon) | Golang |
 | [Gonewz](https://github.com/ahampriyanshu/gonewz) | Golang |
 | [Norm has an api](https://github.com/ahampriyanshu/norm_has_an_api) | Express |
 | [Track Covid](https://github.com/ahampriyanshu/track-covid) | React |
 | [Aanav](https://github.com/ahampriyanshu/aanav) | PHP, Mysql |
-| [Vaachaal](https://github.com/ahampriyanshu/vaachaal) | PHP, Mysql |
+| [Vaachaal](https://github.com/ahampriyanshu/vaachaal) | PHP, Mysql | -->
 
 ## Tutorials
 

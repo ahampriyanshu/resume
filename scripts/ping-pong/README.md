@@ -2,4 +2,4 @@
 
 ## Preview
 
-![](https://github.com/ahampriyanshu/meta/raw/main/project/ping-pong.gif?raw=true)
+![](https://github.com/ahampriyanshu/meta/raw/main/script/ping-pong.gif?raw=true)
