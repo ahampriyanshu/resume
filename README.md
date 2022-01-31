@@ -22,7 +22,7 @@
 
 - [Deployed on Heroku](https://gonewz.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/gonewz)
-- Express, Lodash, Heroku
+- Golang, NewsAPI
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/3.png?raw=true)
 
 
@@ -38,7 +38,7 @@
 
 - [Deployed on Heroku](https://normhasanapi.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/norm-has-an-api)
-- Express, Lodash, Heroku
+- Express, Lodash
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
 
 
@@ -46,7 +46,7 @@
 
 - [Deployed on Vercel](https://bulky.vercel.com/) 
 - [Github](https://github.com/ahampriyanshu/bulky)
-- Pug, Express, Mongo, Sheets API
+- Pdflib, FileSaver.js, xlsx.js, Pizzip
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/6.png?raw=true)
 
 
@@ -55,36 +55,35 @@
 - [Deployed on 000webhost](https://ahampriyanshu.000webhostapp.com/aanav/index.php) 
 - [Github](https://github.com/ahampriyanshu/aanav)
 - PHP, Mysql, BS4, Phpmailer, FPDF
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
-
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/7.png?raw=true)
 
 
 ### Track Covid (March 2020)
 
 - [Deployed on Netlify](https://ahampriyanshu.com/track-covid/) 
 - [Github](https://github.com/ahampriyanshu/track-covid)
-- PHP, Mysql, BS4, CKEditor
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+- React, Material UI, Chart JS
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/8.png?raw=true)
 
 
 ### Vaachaal (Oct 2019)
 
 - [Deployed on 000webhost](https://ahampriyanshu.000webhostapp.com/vaachaal/index.php) 
-- [Github](https://github.com/i-GNEz/i-GNEz.github.io)
+- [Github](https://github.com/ahampriyanshu/vaachaal)
 - PHP, Mysql, BS4, CKEditor
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/9.png?raw=true)
 
 ## Tutorials
 
-| Title | Tech Stack  | Instructor | Preview |
-| --- | --- | --- | --- |
-| [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Todo React](tutorials/todo-react/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Todo Express](tutorials/todo-express/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache | [DappUniversity](https://www.dappUniversity.com) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Weather App](tutorials/weatherapp-express/) |  Express, Axios, Weather API | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
-| [Whatsapp Clone](tutorials/weatherapp-express/) | Next.js, Firebase | [Sonny Sangha](https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| Title | Tech Stack  | Instructor |
+| --- | --- | --- |
+| [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) |
+| [Todo React](tutorials/todo-react/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Todo Express](tutorials/todo-express/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache | [DappUniversity](https://www.dappUniversity.com) |
+| [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) |
+| [Weather App](tutorials/weatherapp-express/) |  Express, Axios, Weather API | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
+| [Whatsapp Clone](tutorials/weatherapp-express/) | Next.js, Firebase | [Sonny Sangha](https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA) |
 
 ## Courses
 
