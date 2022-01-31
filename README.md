@@ -6,43 +6,85 @@
 
 - [Deployed on gh-pages](https://i-gnez.github.io/) 
 - [Github](https://github.com/i-GNEz/i-GNEz.github.io)
-- Pug, Express, Mongo, Sheets API
-<p align="left" >
- <img alt="browser frame" src="https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true">
-<p>
+- Pug, Tailwind, Express, Mongo, Sheets API
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+
 
 ### Ojas (Jan 2021)
 
 - [Deployed on Pythonanywhere](https://ahampriyanshu.pythonanywhere.com/) 
 - [Github](https://github.com/ahampriyanshu/ojas-django)
-- Django, SQlite
-<p align="left" >
- <img alt="browser frame" src="https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true">
-<p>
+- Django, Tailwind, AlpineJS, SQlite
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true)
 
 
-<!-- | [Bulky](https://github.com/ahampriyanshu/bulky) | PDFlib, filesaver |
-| [Ojas-Blog](https://github.com/ahampriyanshu/ojas-django) | Django, SQlite  |
-| [i-GNEz](https://github.com/i-GNEz/i-GNEz.github.io) | Pug, Express, Mongo |
-| [Docugo](http://docugo.vercel.app/) | docxtemplater, pizzip |
-| [Gokemon](https://github.com/ahampriyanshu/gokemon) | Golang |
-| [Gonewz](https://github.com/ahampriyanshu/gonewz) | Golang |
-| [Norm has an api](https://github.com/ahampriyanshu/norm_has_an_api) | Express |
-| [Track Covid](https://github.com/ahampriyanshu/track-covid) | React |
-| [Aanav](https://github.com/ahampriyanshu/aanav) | PHP, Mysql |
-| [Vaachaal](https://github.com/ahampriyanshu/vaachaal) | PHP, Mysql | -->
+### Gonewz (Dec 2020)
+
+- [Deployed on Heroku](https://gonewz.herokuapp.com/) 
+- [Github](https://github.com/ahampriyanshu/gonewz)
+- Express, Lodash, Heroku
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/3.png?raw=true)
+
+
+### Algo DS 101 (Oct 2020)
+
+- [Deployed on gh-pages](https://dsa.ahampriyanshu.com/) 
+- [Github](https://github.com/ahampriyanshu/algo-ds-101/)
+- Github Actions, Github Pages
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
+
+
+### Norm has an API (Sept 2020)
+
+- [Deployed on Heroku](https://normhasanapi.herokuapp.com/) 
+- [Github](https://github.com/ahampriyanshu/norm-has-an-api)
+- Express, Lodash, Heroku
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
+
+
+### Bulky (May 2021)
+
+- [Deployed on Vercel](https://bulky.vercel.com/) 
+- [Github](https://github.com/ahampriyanshu/bulky)
+- Pug, Express, Mongo, Sheets API
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/6.png?raw=true)
+
+
+### Aanav (April 2020)
+
+- [Deployed on 000webhost](https://ahampriyanshu.000webhostapp.com/aanav/index.php) 
+- [Github](https://github.com/ahampriyanshu/aanav)
+- PHP, Mysql, BS4, Phpmailer, FPDF
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+
+
+
+### Track Covid (March 2020)
+
+- [Deployed on Netlify](https://ahampriyanshu.com/track-covid/) 
+- [Github](https://github.com/ahampriyanshu/track-covid)
+- PHP, Mysql, BS4, CKEditor
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+
+
+### Vaachaal (Oct 2019)
+
+- [Deployed on 000webhost](https://ahampriyanshu.000webhostapp.com/vaachaal/index.php) 
+- [Github](https://github.com/i-GNEz/i-GNEz.github.io)
+- PHP, Mysql, BS4, CKEditor
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
 
 ## Tutorials
 
-| Title | Tech Stack  | Instructor |
-| --- | --- | --- |
-| [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) |
-| [Todo React](tutorials/todo-react/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
-| [Todo Express](tutorials/todo-express/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
-| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache | [DappUniversity](https://www.dappUniversity.com) |
-| [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) |
-| [Weather App](tutorials/weatherapp-express/) |  Express, Axios, Weather API | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) |
-| [Whatsapp Clone](tutorials/weatherapp-express/) | Next.js, Firebase | [Sonny Sangha](https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA) |
+| Title | Tech Stack  | Instructor | Preview |
+| --- | --- | --- | --- |
+| [Chat App](tutorials/chatapp-socket/) | Socket.io, Express, Electron | [Brad Traversy](https://www.traversymedia.com/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Todo React](tutorials/todo-react/) | React, Material UI | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Todo Express](tutorials/todo-express/) | EJS, Express | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Todo Solidity](tutorials/todo-sol/) | Solidity, Truffle, Metamask, Ganache | [DappUniversity](https://www.dappUniversity.com) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Vidly](tutorials/vidly-django/) | Django, Materialize | [Mosh Hamedani](https://codewithmosh.com/courses) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Weather App](tutorials/weatherapp-express/) |  Express, Axios, Weather API | [Angela Yu](https://www.udemy.com/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
+| [Whatsapp Clone](tutorials/weatherapp-express/) | Next.js, Firebase | [Sonny Sangha](https://www.youtube.com/channel/UCqeTj_QAnNlmt7FwzNwHZnA) | ![](https://github.com/ahampriyanshu/meta/raw/main/tutorial/chat-socket.gif?raw=true) |
 
 ## Courses
 
