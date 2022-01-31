@@ -4,16 +4,21 @@
 
 ### i-GNEz (April 2021)
 
-- [Visit](https://i-gnez.github.io/) | [Code](https://github.com/i-GNEz/i-GNEz.github.io)
+- [Deployed on gh-pages](https://i-gnez.github.io/) 
+- [Github](https://github.com/i-GNEz/i-GNEz.github.io)
 - Pug, Express, Mongo, Sheets API
-![](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
+<p align="left" >
+ <img alt="browser frame" src="https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true">
+<p>
 
 ### Ojas (Jan 2021)
 
-- [Visit](https://ahampriyanshu.pythonanywhere.com/) | [Code](https://github.com/ahampriyanshu/ojas-django)
+- [Deployed on Pythonanywhere](https://ahampriyanshu.pythonanywhere.com/) 
+- [Github](https://github.com/ahampriyanshu/ojas-django)
 - Django, SQlite
-![](https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true)
-
+<p align="left" >
+ <img alt="browser frame" src="https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true">
+<p>
 
 
 <!-- | [Bulky](https://github.com/ahampriyanshu/bulky) | PDFlib, filesaver |
