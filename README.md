@@ -31,7 +31,8 @@
 - [Deployed on gh-pages](https://dsa.ahampriyanshu.com/) 
 - [Github](https://github.com/ahampriyanshu/algo-ds-101/)
 - Github Actions, Github Pages
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
+
 
 
 ### Norm has an API (Sept 2020)
@@ -39,7 +40,7 @@
 - [Deployed on Heroku](https://normhasanapi.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/norm-has-an-api)
 - Express, Lodash
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
 
 
 ### Bulky (May 2021)
@@ -89,15 +90,16 @@
 
 | Title | Instructor |
 | --- | --- |
+| [Programming In C](courses/c-swayam/) | Anupam Basu, IIT Kharagpur |
+| [Programming In C++](courses/c++-swayam/) | Partha Pratim Das, IIT Kharagpur |
+| [Programming In Java](courses/java-swayam/) | Debasis Samanta, IIT Kharagpur |
+| [RHCSA](courses/golang/) | [Vimal Dagga](https://www.youtube.com/channel/UCtY-JhEZ3iPLtozWGgd2efQ) |
 | [Bash Crash Course](courses/bash/) | [Linuxhint](https://www.youtube.com/channel/UCHErB0TULAlldbhPMfBJ1Xg) |
 | [Golang Crash Course](courses/golang/) | [Brad Traversy](https://www.traversymedia.com/) |
 | [Scala Crash Course](courses/scala/) | [Derek Banas](https://www.youtube.com/user/derekbanas) |
 | [Indian Political Thought](courses/indian-political-thought/) | Sibaji Pratim Basu, St. Xavier's College |
 | [Aspects of European History (1780- 1939)](courses/european-history/) | Subhas Ranjan Chakrobarty, Presidency College |
 | [Film Studies](courses/film-studies/) | Vellikkeel Raghavan, Central University of Kerala |
-| [Programming In C](courses/c-swayam/) | Anupam Basu, IIT Kharagpur |
-| [Programming In C++](courses/c++-swayam/) | Partha Pratim Das, IIT Kharagpur |
-| [Programming In Java](courses/java-swayam/) | Debasis Samanta, IIT Kharagpur |
 | [Advanced C++](courses/adv-c++-swayam/) | Kannan Moudgalya, IIT Bombay |
 | [German I](courses/german-swayam/) | Milind Brahme, IIT Madras |
 
@@ -124,15 +126,14 @@
 | [Shooter](scripts/shooter/) | Vanilla JS |
 | [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3) | Conf File |
 
+
 ## Blog/Articles
 
 * [Blog](https://ahampriyanshu.com/blog)
-* [Experiments with competitive programming](https://ahampriyanshu.com/cp)
-* [Geeks For Geeks](https://auth.geeksforgeeks.org/user/ahampriyanshu/articles)
-* [Algo DS 101](https://github.com/ahampriyanshu/algo-ds-101)
+* [My experiments with competitive programming](https://ahampriyanshu.com/cp)
 * [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)
-* [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
 * [Gists](https://gist.github.com/ahampriyanshu)
+* [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
 
 ## Contact
 
