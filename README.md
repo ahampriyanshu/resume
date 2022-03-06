@@ -31,7 +31,7 @@
 - [Deployed on gh-pages](https://dsa.ahampriyanshu.com/) 
 - [Github](https://github.com/ahampriyanshu/algo-ds-101/)
 - Github Actions, Github Pages
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
 
 
 
@@ -40,7 +40,7 @@
 - [Deployed on Heroku](https://normhasanapi.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/norm-has-an-api)
 - Express, Lodash
-![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
+![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
 
 
 ### Bulky (May 2021)
