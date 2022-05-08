@@ -1,13 +1,13 @@
-title: 'Links'
-name: 'Links'
-author: 'Priyanshu Tiwari'
-tagline: 'Grouping all my projects, courses, articles in one place'
-description: 'Grouping all my projects, courses, articles in one place'
+title: Links
+name: Links
+author: Priyanshu Tiwari
+tagline: Grouping all my projects, courses, assignments, articles in one place
+description: Grouping all my projects, courses, assignments, articles in one place
 url: https://links.ahampriyanshu.com
 lang: en
 timezone: Asia/Kolkata 
 theme: jekyll-theme-slate
-rss-description: 'Grouping all my projects, courses, articles in one place'
+rss-description: Grouping all my projects, courses, assignments, articles in one place
 plugins:
   - jekyll-sitemap  
   - jekyll-feed

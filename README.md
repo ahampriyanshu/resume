@@ -9,7 +9,6 @@
 - Pug, Tailwind, Express, Mongo, Sheets API
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/1.png?raw=true)
 
-
 ### Ojas (Jan 2021)
 
 - [Deployed on Pythonanywhere](https://ahampriyanshu.pythonanywhere.com/) 
@@ -17,14 +16,12 @@
 - Django, Tailwind, AlpineJS, SQlite
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/2.png?raw=true)
 
-
 ### Gonewz (Dec 2020)
 
 - [Deployed on Heroku](https://gonewz.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/gonewz)
 - Golang, NewsAPI
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/3.png?raw=true)
-
 
 ### Algo DS 101 (Oct 2020)
 
@@ -34,14 +31,12 @@
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/4.png?raw=true)
 
 
-
 ### Norm has an API (Sept 2020)
 
 - [Deployed on Heroku](https://normhasanapi.herokuapp.com/) 
 - [Github](https://github.com/ahampriyanshu/norm-has-an-api)
 - Express, Lodash
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/5.png?raw=true)
-
 
 ### Bulky (May 2021)
 
@@ -50,7 +45,6 @@
 - Pdflib, FileSaver.js, xlsx.js, Pizzip
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/6.png?raw=true)
 
-
 ### Aanav (April 2020)
 
 - [Deployed on 000webhost](https://ahampriyanshu.000webhostapp.com/aanav/index.php) 
@@ -58,14 +52,12 @@
 - PHP, Mysql, BS4, Phpmailer, FPDF
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/7.png?raw=true)
 
-
 ### Track Covid (March 2020)
 
 - [Deployed on Netlify](https://ahampriyanshu.com/track-covid/) 
 - [Github](https://github.com/ahampriyanshu/track-covid)
 - React, Material UI, Chart JS
 ![browser frame](https://github.com/ahampriyanshu/meta/raw/main/project/8.png?raw=true)
-
 
 ### Vaachaal (Oct 2019)
 
@@ -101,7 +93,6 @@
 | [Aspects of European History (1780- 1939)](courses/european-history/) | Subhas Ranjan Chakrobarty, Presidency College |
 | [Film Studies](courses/film-studies/) | Vellikkeel Raghavan, Central University of Kerala |
 | [Advanced C++](courses/adv-c++-swayam/) | Kannan Moudgalya, IIT Bombay |
-| [German I](courses/german-swayam/) | Milind Brahme, IIT Madras |
 
 ## Hackathons
 
@@ -127,17 +118,14 @@
 | [.vimrc](https://gist.github.com/ahampriyanshu/27044cee6455ecd566f340b99f7595c3) | Conf File |
 
 
-## Blog/Articles
+## Resources
 
-* [Blog](https://ahampriyanshu.com/blog)
-* [My experiments with competitive programming](https://ahampriyanshu.com/cp)
 * [Tailwind Components](https://tailwindcomponents.com/u/ahampriyanshu)
 * [Gists](https://gist.github.com/ahampriyanshu)
-* [Making linux terminal awesome](https://github.com/ahampriyanshu/making-linux-terminal-awesome/)
 
 ## Contact
 
-* [Portfolio](https://ahampriyanshu.com/)
+* [Blog](https://ahampriyanshu.com/)
 * [Resume](https://drive.google.com/file/d/1_GZ56-O3JNF6-jmU4Xu-StJYgNdz3Tsa/view?usp=sharing)
 * [ahampriyanshu@gmail.com](mailto:ahampriyanshu@gmail.com?subject=hello)
 * [Telegram](https://t.me/ahampriyanshu)
