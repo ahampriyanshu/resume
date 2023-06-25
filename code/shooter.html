@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<style>
+html, body {
+    height: 100%;                            /*css tag for body*/
+    margin: 0;
+}
+body {
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+#game { border: 10px ; 
+ background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;        /*css tag for canvas*/ }
+
+</style>
+</head>
+<body>
+<canvas width="565" height="500" id="game"></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+const grid = 15;
+const playerHeight = grid * 3; // 45
+const maxPlayerY = canvas.height - grid - playerHeight;
+var scoreleft=0;
+var scoreright=0;
+var mySound;
+var Ammoleft=100;
+var Ammoright=100;
+var playerSpeed = 8;
+var load = 0;
+var gameover=false;
+var flaw=355;
+var go=20;
+const leftPlayer = {
+  // Start in the middle of the game on the left side
+x: grid * 2,
+y: canvas.height / 2 - playerHeight / 2,
+width: grid,
+height: playerHeight,
+  
+  // Shooting cooldown
+cooldown: 0,
+  
+  //Player velocity
+dy: 0
+};
+
+const leftPlayer2 = {
+  // Start in the middle of the game on the left side
+ x: grid * 2,
+y: canvas.height / 2 - playerHeight / 2,
+width: grid,
+height: playerHeight,
+  
+  // Shooting cooldown
+cooldown: 0,
+  
+  //Player velocity
+dy: 0
+};
+
+const rightPlayer = {       // Start in the middle of the game on the right side
+x: canvas.width - grid * 3,
+y: canvas.height / 2 - playerHeight / 2,
+width: grid,
+height: playerHeight,    // Start in the middle of the game on the right side
+cooldown: 0,
+dy: 0    // Start in the middle of the game on the right side
+};
+
+const bullets = {   // Decalre bulletans its velocity 
+  speed: 12,
+  array: []
+};
+
+const rightPlayer2 = {         // Start in the middle of the game on the right side
+x: canvas.width - grid * 3,
+y: canvas.height / 2 - playerHeight / 2,
+width: grid,
+height: playerHeight,
+cooldown: 0,           // Shooting cooldown
+dy: 0                 // Player velocity
+};
+
+function collides(obj1, obj2) {             // Function to check collision 
+  return obj1.x < obj2.x + obj2.width &&
+         obj1.x + obj1.width > obj2.x &&
+         obj1.y < obj2.y + obj2.height &&
+         obj1.y + obj1.height > obj2.y;
+}
+
+function loop() {                           // game loop
+  requestAnimationFrame(loop);
+  context.clearRect(0,0,canvas.width,canvas.height);
+  
+  // bullet cooldowns
+  // left player
+  if (leftPlayer.cooldown > 0) {
+    leftPlayer.cooldown--;
+  }
+  // right player 
+  if (rightPlayer.cooldown > 0) {
+    rightPlayer.cooldown--;
+  }
+  
+  // move players by their velocity
+  leftPlayer.y += leftPlayer.dy;
+  rightPlayer.y += rightPlayer.dy;
+  
+  // prevent players from going through walls
+  if (leftPlayer.y < grid) {
+    leftPlayer.y = grid;
+  }
+  else if (leftPlayer.y > maxPlayerY) {
+    leftPlayer.y = maxPlayerY;
+  }
+  
+  if (rightPlayer.y < grid) {
+    rightPlayer.y = grid;
+  }
+  else if (rightPlayer.y > maxPlayerY) {
+    rightPlayer.y = maxPlayerY;
+  }
+  
+  // draw bullets
+
+  context.fillStyle = 'red';
+  bullets.array.forEach(function(bullet, index) {
+    context.fillRect(bullet.x, bullet.y, 15, 8);
+  
+  // check if the bullet hits the left player
+  if (collides(bullet, leftPlayer)) {
+    scoreright++;
+    bullets.array.splice(index, 1);
+    leftPlayer.y = canvas.height / 2 - playerHeight / 2;
+    rightPlayer.y = canvas.height / 2 - playerHeight / 2;
+    bullets.array.length = 0;
+  }
+  // check if the bullet hits the right player
+  else if (collides(bullet, rightPlayer)) {
+    scoreleft++;
+    bullets.array.splice(index, 1);
+    leftPlayer.y = canvas.height / 2 - playerHeight / 2;
+    rightPlayer.y = canvas.height / 2 - playerHeight / 2;
+    bullets.array.length = 0;
+  }
+   
+    if ( scoreleft ==3 || scoreright ==3){
+    gameover=true;
+    document.addEventListener('keydown', function(e) {
+  if (e.which === 13 || e.which === 32) {
+      document.location.reload();
+  }
+ 
+  });
+    }
+    // move bullets
+    bullet.x += bullet.dx;
+  
+  // remove bullets that leave the screen
+    if (bullet.x < 0 || bullet.x > canvas.width) {
+      bullets.array.splice(index, 1);
+    }
+  });
+
+ 
+
+  if(gameover === true){        // after game is over
+      context.font='bold 90px courier';
+      context.fillStyle = 'black';
+      context.fillText('GAMEOVER',20,170);  // Display gameover
+      context.font='bold 25px courier';
+      context.fillStyle = 'black';
+      context.fillText('LOADING GAME '+ Math.floor(load) + ' %',160,260);  // Display fake loading status without decimals places
+      setInterval(Math.floor(load+=0.3334), 5000);      // Display Timer
+      setInterval('window.location.reload()', 5000);    // Automatically reload the page after game is over
+      context.fillText('Press Enter or Space to realod',64,480);
+      if( scoreleft ===0 || scoreright ===0){           // If opponent doesn't score at all
+      context.strokeText('!FLAWLESS VICTORY!',140,flaw); 
+      setInterval(flaw+=0.20,1000); }                   // Changes the orientation of FLAWLESS VICTORY 
+
+  }
+  if( scoreleft === 3){
+    context.font=' bold 20px courier'
+   context.fillText('Player 1 Won',190,320,); // Display the winner
+  }   
+
+  if( scoreright === 3){
+    context.font=' bold 20px courier'
+   context.fillText('Player 2 Won',190,320,); 
+  }  
+  
+  //Draw Paddles      
+  context.fillStyle = "black";                         
+  context.fillRect(leftPlayer.x, leftPlayer.y, leftPlayer.width, leftPlayer.height);
+
+  context.fillStyle = "black";
+  context.fillRect(rightPlayer.x, rightPlayer.y, rightPlayer.width, rightPlayer.height);
+
+  context.font='bold 15px courier';
+  context.fillStyle = "black"; 
+  context.fillText('Score: '+scoreleft,100,15);
+  context.fillText('Ammo: '+Ammoleft,100,35);
+    context.fillStyle = "black"; 
+  context.fillText('Ammo: '+Ammoright,395,35); 
+  context.fillText('Score: '+scoreright,400,15);   
+}  
+
+document.addEventListener('keydown', function(e) {   // Taking input from the keyboard
+  // up arrow key
+  if (e.which === 38) {
+    rightPlayer.dy = -playerSpeed;
+  }
+  // down arrow key
+  else if (e.which === 40) {
+    rightPlayer.dy = playerSpeed;
+  }
+  
+  // w key
+  if (e.which === 87) {
+    leftPlayer.dy = -playerSpeed;
+  }
+  // a key
+  else if (e.which === 83) {
+    leftPlayer.dy = playerSpeed;
+  }
+  // left arrow key
+  if (e.which === 37 && rightPlayer.cooldown === 0) {
+       Ammoright--;
+      if (Ammoright === 0){
+  scoreright--;
+  Ammoright=100 ;
+}
+    bullets.array.push({
+    x: rightPlayer.x - 10, 
+    y: rightPlayer.y + 20, 
+    width: 10,
+    height: 5,
+    dx: -bullets.speed
+  });
+  rightPlayer.cooldown = 25;
+  }
+  // d key
+  if (e.which === 68 && leftPlayer.cooldown === 0) {
+      Ammoleft--;
+      if (Ammoleft === 0){
+  scoreleft--;
+  Ammoleft=100;
+}
+    bullets.array.push({
+    x: leftPlayer.x + 15, 
+    y: leftPlayer.y + 20, 
+    width: 10,
+    height: 5,
+    dx: bullets.speed
+  });
+  leftPlayer.cooldown = 25;
+  }
+});
+// listen to keyboard events to stop the player if key is released
+document.addEventListener('keyup', function(e) {
+  if (e.which === 38 || e.which === 40) {
+    rightPlayer.dy = 0;
+  }
+  
+  if (e.which === 83 || e.which === 87) {
+    leftPlayer.dy = 0;
+  }
+});
+// Starts the game
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>
